@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lesson bem</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+ <!-- ==========  Начало header ========== -->
+  <header>
+  <div class="container">
+   <div class="row">
+   <div class="container__logo"><img class="logo__img" src="./img/logo.svg"></div>
+   <div class="top-menu">
+    <ul class="top-menu__list">
+      <li class="top-menu__item"><a style="color: #3a405b" href="#">Home</a></li>
+      <li class="top-menu__item"><a style="color: #3a405b" href="#">Devices</a></li>
+      <li class="top-menu__item"><a style="color: #3a405b" href="#">Drlivery & Payment</a></li>
+      <li class="top-menu__item"><a style="color: #3a405b" href="#"> Guarantee</a></li>
+      <li class="top-menu__item"><a style="color: #3a405b" href="#">About Us</a></li>
+    </ul>
+    <form class="buy">
+     <a style="color: #3a405b" class="buy__basket" href="#"><img src='./img/truck.svg'> cart</a> 
+     <a class="buy_number" href="#">0</a>
+     <button class="buy__button">Sign in</button>
+    </form>
+   </div>
+   </div>
+  </div>
+  </header>
+  <!-- ==========  Конец header ========== --> 
+<hr>
+   <!-- ==========  Начало меню ========== --> 
+  <div class="menu">
+    <ul class="menu__list">
+      <li class="menu__item"><a style="color: #cacedc" href="#">Top sales</a></li>
+      <li class="menu__item"><a style="color: #cacedc" href="#">Brand focus</a></li>
+      <li class="menu__item"><a style="color: #cacedc" href="#">Hi-tech</a></li>
+      <li class="menu__item"><a style="color: #cacedc" href="#">Best sellers</a></li>
+      <li class="menu__item"><a style="color: #cacedc" href="#">Projects</a></li>
+    </ul>
+    <form class="form">
+     <a class="form__support" href="#">Support</a> 
+     <input style="color:#e3e8f0" class="form__search" type="search" name="search" placeholder="I'm looking for...">
+    </form>
+   </div>
+ <!-- ==========  Конец меню ========== --> 
+ <!-- ==========  Начало главного экрана ========== -->  
+<section class="main">
+    <div class="main__row">
+      <h1 class="main__title">
+  iPhone 6 32Gb
+  Black</h1>
+      <h5 class="main__description">      At first, for some time, I was not able to answer him one word; but as he
+      had taken me in his arms I held fast by him, or I should have fallen to
+      the ground.</h5>
+      <button class="main__button">Buy now</button>
+    </div>
+</section>
+ <!-- ==========  Конец главного экрана ========== --> 
+
+    
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <script>
+      $('.menu__item').mouseenter(function(){
+        $(this).addClass('menu__item_hovered')
+      });
+    </script>
+  </body>
+</html>
