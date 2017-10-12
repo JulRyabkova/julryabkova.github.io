@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>Frost</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+
+  </head>
+  <body>
+
+  <!-- ==========  Начало меню ========== -->
+     <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand"><img src="img/logo.png" alt="Логотип"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-main">
+            <ul class="nav navbar-nav  navbar-right">
+              <li class="active"><a href="#">HOME</a></li>
+              <li><a href="#">SERVICES</a></li>
+              <li><a href="#">PORTFOLIO</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <li><a href="#">FEATURES</a></li>
+              <li><a href="#">BLOG</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <!-- ==========  Конец меню ========== -->  
+
+
+  <!-- ==========  Начало главного экрана ========== -->  
+<section id="main">
+  <div class="container">
+    <div class="row text-center">
+      <h1>Hello! We’re Frost</h1>
+      <h4>A digital & branding agency based in neverland</h4>
+    </div>
+  </div>
+</section>
+ <!-- ==========  Конец главного экрана ========== --> 
+
+
+  <!-- ==========  Начало страницы сервисов ========== -->   
+    <section id="service">
+    <div class="container">
+      <div class="row header-service text-center">
+      <h2>how it works</h2>
+      <h4>We’re making useful things since 2008</h4>
+      </div>
+     <div class="row">
+       <div class="col-md-3 text-center">
+         <img class="service" src="img/s1.png" alt="">
+         <br>
+         <img src="img/shape.png">
+         <h5>Photography</h5>
+         <p>Vivamus sagittis lacuson augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
+       </div>
+       <div class="col-md-3 text-center">
+         <img class="service" src="img/s2.png" alt="">
+         <br>
+         <img src="img/shape.png">
+         <h5>web design</h5>
+         <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient monte nascetur.</p>
+       </div>
+       <div class="col-md-3 text-center">
+         <img class="service" src="img/s3.png" alt="">
+         <br>
+         <img src="img/shape.png">
+         <h5>e-commerce</h5>
+         <p>Curabitur blandit matti tempus porttitor. Donec id elit non mi porta ut gravida at eget metus.  Consectetur adipiscing elit.</p>
+       </div>
+       <div class="col-md-3 text-center">
+         <img class="service" src="img/s4.png" alt="">
+         <br>
+         <img src="img/shape.png">
+         <h5>sound design</h5>
+         <p>Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio.</p>
+       </div>
+     </div>
+     <div class="row text-center">
+     <button type="submit" class="btn-service">see our projects</button>
+     </div>
+      </div>
+    </section>
+  <!-- ==========  Конец страницы сервисов ========== -->  
+
+
+  <!-- ==========  Начало Parallax ========== -->  
+  <section id="parallax">
+    <div class="container">
+      <div class="row parallax text-center">
+        <a href="#">Click <span>&</span> Share the love</a>
+        <br>
+        <img src="img/shape2.png">
+      </div>
+    </div>
+  </section> 
+  <!-- ==========  Конец Parallax ========== --> 
+
+
+  <!-- ==========  Начало Портфолио ========== -->  
+  <section id="portfolio">
+   <div class="container">
+     <div class="row text-center">
+       <h2>our awesome projects</h2>
+       <h4>great design comes with understanding customer needs</h4>
+     </div>
+    <div class="row"> 
+    <nav class="navbar navbar-inner">
+        <div class="container-fluid">
+        <div class="col-md-10 col-md-offset-2">
+            <ul class=" nav navbar-nav">
+              <li class="active"><a href="#">ALL</a></li>
+              <li><a href="#">WEB DESIGN</a></li>
+              <li><a href="#">GRAPHIC</a></li>
+              <li><a href="#">PHOTOGRAPHY</a></li>
+              <li><a href="#">MOTION VIDEO</a></li>
+            </ul>
+        </div>    
+        </div>
+      </nav> 
+    </div>   
+   <div class="modal fade" id="image-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <div class="modal-title">Просмотр изображения</div>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive center-block" src="" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div> 
+<div class="row">
+   <div class="col-sm-6 col-md-4 col-lg-3"> 
+    <a href="#" class="thumbnail">
+       <img src="img/rectangal.png" alt="...">
+    </a>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3"> 
+    <a href="#" class="thumbnail">
+       <img src="img/rectangal.png" alt="...">
+    </a>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3"> 
+    <a href="#" class="thumbnail">
+       <img src="img/rectangal.png" alt="...">
+    </a>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3"> 
+    <a href="#" class="thumbnail">
+       <img src="img/rectangal.png" alt="...">
+    </a>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3"> 
+    <a href="#" class="thumbnail">
+       <img src="img/rectangal.png" alt="...">
+    </a>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3"> 
+    <a href="#" class="thumbnail">
+       <img src="img/rectangal.png" alt="...">
+    </a>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3"> 
+    <a href="#" class="thumbnail">
+       <img src="img/rectangal.png" alt="...">
+    </a>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3"> 
+    <a href="#" class="thumbnail">
+       <img src="img/rectangal.png" alt="...">
+    </a>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3"> 
+    <a href="#" class="thumbnail">
+       <img src="img/rectangal.png" alt="...">
+    </a>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3"> 
+    <a href="#" class="thumbnail">
+       <img src="img/rectangal.png" alt="...">
+    </a>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3"> 
+    <a href="#" class="thumbnail">
+       <img src="img/rectangal.png" alt="...">
+    </a>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3"> 
+    <a href="#" class="thumbnail">
+       <img src="img/rectangal.png" alt="...">
+    </a>
+  </div>
+</div> 
+   </div>
+  </section>
+  <!-- ==========  Конец Портфолио ========== -->  
+
+
+  <!-- ==========  Начало Parallax2 ========== --> 
+  <section id="parallax2">
+    <div class="container">
+      <div class="row parallax2 text-center">
+        <a href="#">We create unique <span>&</span> gorgeous things.</a>
+        <br>
+         <button type="button" class="submit btn-parallax2">Let’s work Together</button>
+      </div>
+    </div>
+  </section> 
+  <!-- ==========  Конец Parallax2 ========== --> 
+
+
+  <!-- ==========  Начало About Us ========== --> 
+  <section id="about-us">
+    <div class="container">
+      <div class="row text-center">
+        <h2>About the company</h2>
+        <h5>A creative agency turning ideas into beautiful things.</h5>
+      </div>  
+      <div class="row">
+          <div class="col-md-9 text-left">
+            <h4>Our working Place</h4>
+            <blockquote>“Vestibulum ligut praesent commodo cursus magna, consectetur et. Cum socis natoque penatibus et magnis dis tellus parturient pharetra montes.”</blockquote>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <a href="#">Read more</a>
+          </div>
+          <div class="col-md-3">
+          <img src="img/rectangal2.png" alt="">
+          </div>
+      </div>    
+          <div class="row text-left">
+            <div class="col-md-4">
+              <h4>What we do</h4>
+              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.  Consectetur adipiscing vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum ullamcorper.</p>
+            </div>
+            <div class="col-md-4">
+              <h4>What our process</h4>
+              <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+            <div class="col-md-4">
+              <h4>What our skills</h4>
+              <p>Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam.</p>
+            </div>
+          </div> 
+    </div>
+  </section>
+  <!-- ==========  Конец About Us ========== --> 
+
+<hr>
+
+  <!-- ==========  Начало Team ========== --> 
+  <section id="team">
+  <div class="container">
+   <div class="row text-left">
+     <h4>Meet the team</h4>
+   </div>
+   <div class="row text-center"> 
+   <div class="col-md-4">
+     <img src="img/rectangal.png" alt="">
+     <h5>Connor Gibson</h5>
+     <h6>Interface Designer</h6>
+     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, egety lacinia odio sem, vestibulum midor ligula porta felis euismod semper.</p>
+   </div>
+   <div class="col-md-4">
+     <img src="img/rectangal.png" alt="">
+     <h5>Nikolas Brooten</h5>
+     <h6>Web Developer</h6>
+     <p>Integer posuere erat anka ante venenatis dapibus posuere velitor aliquet.  Consectetur adipiscing vestibulum ligula porta felis euismod semper.</p>
+   </div>
+   <div class="col-md-4">
+     <img src="img/rectangal.png" alt="">
+     <h5>Barclay Widerski</h5>
+     <h6>Photographer</h6>
+     <p>Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam at venenatis vestibulum ullamcorper.</p>
+   </div>
+   </div>
+   </div>
+  </section>
+
+  <!-- ==========  Конец Team ========== --> 
+
+
+  <!-- =========== Карусель ============ -->
+<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+  <!-- Индикаторы для карусели -->
+  <ol class="carousel-indicators">
+    <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>   
+  <!-- Слайды карусели -->
+  <div class="carousel-inner">
+    <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+    <div class="active item">
+      <div class="carousel-caption">
+        <h3><span>"</span>Vestibulum ligut praesent commodo cursus magna, consectetur et. Cum socis natoque<span>"</span><br> penatibus et magnis dis tellus parturient pharetra montes.</h3>
+        <p>Nikolas Brooten - SEO of Starship </p>
+      </div>
+    </div>
+  </div>
+  <!-- Навигация для карусели -->
+  <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+  </a>
+  <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">
+  </a>
+</div>
+
+  <!-- =========== Конец Карусели ============ -->
+
+
+  <!-- =========== Обратная форма ============ -->
+  <section id="form">
+  <div class="container">
+    <div class="row text-center">
+      <h2>Get in touch</h2>
+      <h4>Feel Free to Drop Us a Line to contact us</h4>
+      <p class="text-center">Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue.</p>
+    </div>
+    <div class="row text-center">
+    <div class="col-md-4">
+     <p id="address"><i class="fa fa-map-marker"></i>Moon Street Light Avenue 14/05 Jupiter, JP 80630</p>
+    </div>
+    <div class="col-md-4">
+     <a href="tel:0247 541 65 87"><p id="address"><i class="fa fa-phone"></i> 0247 541 65 87</p></a>
+    </div> 
+    <div class="col-md-4">
+     <p id="address"><i class="fa fa-envelope"></i>support@frost.com</p>
+    </div>   
+    </div>
+  </div>  
+  </section>
+  </body>
+</html>
