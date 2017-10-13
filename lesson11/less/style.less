@@ -1,0 +1,98 @@
+@main-color:  #3d3a3a;
+.photo-size{
+	width: 320px;
+	height: 220px;
+}
+
+body{
+	background: @main-color;
+	font-family: 'Lobster', cursive;
+}
+
+.gradient(@from: #000, @to: #fff) {
+  background-color: @from;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(@from), to(@to));
+  background-image: -webkit-linear-gradient(top, @from, @to);
+  background-image:    -moz-linear-gradient(top, @from, @to);
+  background-image:      -o-linear-gradient(top, @from, @to);
+  background-image:         linear-gradient(to bottom, @from, @to);
+}
+
+.opacity (@opacity: 0.5) {
+  -webkit-opacity: @opacity;
+     -moz-opacity: @opacity;
+          opacity: @opacity;
+}
+
+.border-radius(@r: 3px) {
+  -webkit-border-radius: @r;
+  -moz-border-radius: @r;
+  border-radius: @r;
+}
+
+.transition(@property: all, @duration: 0.3s, @function: linear) {
+  -webkit-transition: @arguments;
+     -moz-transition: @arguments;
+       -o-transition: @arguments;
+          transition: @arguments;
+}
+
+.transform(@value) {
+  -webkit-transform: @value;
+     -moz-transform: @value;
+      -ms-transform: @value;
+       -o-transform: @value;
+          transform: @value;
+}
+
+.galery{
+	margin-top: 60px;
+	&-photo{
+	.opacity(0.4);
+	margin-right: 40px;
+	.photo-size;
+	background-size: cover;
+	.border-radius(3px);
+	padding-left: 0px;
+	border: 2px solid #fff;
+	.transition(all, 0.5s);
+		&:hover{
+		.transform(scale(1.1,1.1));
+		.opacity(1);
+	}
+}
+
+.form{
+	position: absolute;
+	top: 30px;
+	left: 115px;
+		&-btn{
+			background:none;
+			.border-radius(50px);
+			border: 2px solid #fff;
+			color: #fff;
+			padding: 7px 20px;
+			font-size: 15px;
+		}
+		&-text{
+			color: #fff;
+		}
+}
+
+.form {
+  .opacity(0);
+  .transition(all,0.8s);
+	&:hover {
+  	.opacity(1);
+  }
+  	&-btn:hover{
+  		background: #fff;
+		color: #050505;
+  	}
+  }
+}
+
+
+
+
+
