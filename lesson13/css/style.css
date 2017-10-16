@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'Panton';
+  src: url('../css/fonts/Panton-Regular.eot');
+  src: url('../css/fonts/Panton-Regular.eot?#iefix') format('embedded-opentype'), url('../css/fonts/Panton-Regular.woff') format('woff'), url('../css/fonts/Panton-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Panton';
+  overflow-x: hidden;
+}
+.header-text {
+  text-transform: uppercase;
+  font-weight: 800;
+  padding-top: 10px;
+  color: #292d30;
+}
+.header-btn {
+  color: #292d30;
+  background: none;
+  border: 1px solid #292d30;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 4px 13px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+.header-phone {
+  color: #292d30;
+  font-weight: 800;
+}
+.header-phone:hover {
+  text-decoration: none;
+}
+.header-bg {
+  background: url('../img/Main/main-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding-top: -20px;
+  height: 600px;
+  color: #fff;
+}
+.header-main {
+  padding-top: 100px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 40px;
+}
+.header-main_caption {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.header-main_text {
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 15px;
+}
+.header-main_btn {
+  background: #059feb;
+  border-radius: 25px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 8px 27px;
+  margin-bottom: 40px;
+}
+.header-arrow {
+  width: 25px;
+  margin-top: 40px;
+}
+.header-mouse {
+  padding-top: 20px;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+.navbar-nav {
+  float: none;
+  text-align: center;
+}
+.navbar-nav li {
+  float: none;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 15px;
+}
+.about {
+  padding-top: 30px;
+}
+.about-main_caption {
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-left: 10px;
+}
+.about-forma {
+  padding-top: 20px;
+  width: 55px;
+  margin-bottom: 7px;
+}
+.about-line {
+  width: 3px;
+  background: #059feb;
+  height: 60px;
+  position: absolute;
+  top: 30px;
+}
+.about-text {
+  padding-top: 20px;
+}
+.partners {
+  background: #292d30;
+  height: 350px;
+}
+.partners-caption {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding-top: 20px;
+}
+.partners-logo {
+  display: inline-block;
+  margin: 20px 20px;
+}
+.task {
+  padding-top: 30px;
+}
+.task-caption {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.task-line {
+  height: 3px;
+  width: 110px;
+  background: #059feb;
+  text-align: justify;
+  display: inline-block;
+  position: relative;
+  top: -15px;
+}
+.task-text {
+  font-weight: 600;
+}
+.task-logo {
+  width: 90px;
+}
+.task-logo2 {
+  width: 70px;
+}
+.task-logo4 {
+  width: 100px;
+}

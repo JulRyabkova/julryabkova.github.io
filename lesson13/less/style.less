@@ -1,0 +1,166 @@
+@main-color: #292d30;
+@light-color: #059feb;
+
+@font-face {
+	font-family: 'Panton';
+	src: url('../css/fonts/Panton-Regular.eot');
+	src: url('../css/fonts/Panton-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../css/fonts/Panton-Regular.woff') format('woff'),
+		url('../css/fonts/Panton-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Panton';
+	 overflow-x: hidden;
+}
+
+.header{
+	&-text{
+		text-transform: uppercase;
+		font-weight: 800;
+		padding-top: 10px;
+		color: @main-color;
+	}
+	&-btn{
+	 color: @main-color;
+	 background: none;
+	 border: 1px solid @main-color;
+	 border-radius: 5px;
+	 font-weight: 600;
+	 padding: 4px 13px;
+	 margin-bottom: 10px;
+	 margin-top: -10px;
+	}
+	&-phone{
+	 color: @main-color;
+	 font-weight: 800;
+	 &:hover{
+	 	text-decoration: none;
+	 }
+	}
+	&-bg{
+		background: url('../img/Main/main-bg.jpg') no-repeat center center;
+		background-size: cover;
+		padding-top: -20px;
+		height: 600px;
+		color: #fff;
+	}
+	&-main{
+		padding-top:100px;
+		text-transform: uppercase;
+		font-weight: 200;
+		font-size:40px;
+	}
+	&-main_caption{
+		text-transform: uppercase;
+		font-weight: 800;
+	}
+	&-main_text{
+		padding-top:20px;
+		font-weight: 600;
+		font-size: 15px;
+	}
+	&-main_btn{
+		background: @light-color;
+		border-radius: 25px;
+		border: none;
+		text-transform: uppercase;
+		font-weight: 800;
+		padding: 8px 27px;
+		margin-bottom: 40px;
+	}
+	&-arrow{
+		width: 25px;
+		margin-top:40px;
+	}
+	&-mouse{
+		padding-top: 20px;
+	}
+}
+
+.navbar{
+	margin-bottom: 0px; 
+    &-nav {
+	  float: none;
+	  text-align: center;
+ 	}
+    &-nav li {
+	  float: none;
+      display: inline-block;
+      font-weight: 800;
+      font-size: 15px;
+    }
+}
+
+.about{
+	padding-top: 30px;
+	&-main_caption{
+		text-transform: uppercase;
+		font-weight: 800;
+		margin-left: 10px;
+	}
+	&-forma{
+		padding-top: 20px;
+		width: 55px;
+		margin-bottom: 7px;
+	}
+	&-line{
+		width:3px;
+		background: @light-color;
+		height: 60px;
+		position: absolute;
+		top: 30px;
+	}
+	&-text{
+		padding-top: 20px;
+	}
+}
+
+.partners{
+	background: @main-color;
+	height: 350px;
+	&-caption{
+		color:#fff;
+		text-transform: uppercase;
+		font-weight: 800;
+		padding-top: 20px;
+	}
+	&-logo{
+		display: inline-block;
+		margin: 20px 20px;
+	}
+}
+
+.task{
+	padding-top: 30px;
+	&-caption{
+		text-transform: uppercase;
+		font-weight: 800;
+	}
+	&-line{
+		height: 3px;
+		width: 110px;
+		background: @light-color;
+		text-align: justify;
+		display:inline-block;
+		position: relative;
+		top: -15px;
+	}
+	&-text{
+		font-weight: 600;
+	}
+	&-logo{
+		width: 90px;
+	}
+	&-logo2{
+		width: 70px;
+	}
+	&-logo4{
+		width: 100px;
+	}
+}
+
