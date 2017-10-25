@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>lesson20</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+</head>
+<body>
+<header>
+<div class="video-container">
+    <div class="filter"></div>
+      <video autoplay loop class="fillWidth">
+       <source src="video-bj/Office_Perks.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        <source src="video-bj/Office_Perks.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden">
+            <img src="video-bj/Office_Perks.jpg" alt="">
+     </div>
+ </div>
+<div class="header header-container text-center">
+<h3 class="header-caption-1">Content description</h3>
+<h1 class="header-caption">See the world through our product</h1>
+<h4 class="header-caption">Get The Most Converstion Rate Easily.</h4>
+<img class="header-logo" src="img/video-icon.png" alt="кнопка">
+<form class="header-form form form-inline input-group col-md-12">
+  <div class="form-group">
+    <label class="sr-only" for="name">Name</label>
+    <input type="text" class="form-control form-name" id="name" placeholder="Your Name">
+  </div>
+  <div class="form-group input-group">
+    <label class="sr-only" for="inputEmail">Email</label>
+    <input type="email" class="form-control form-email" id="inputEmail" placeholder="Email Address">
+  <span class="input-group-btn">
+  <button type="submit" class="form-btn btn btn-primary">Subscribe</button>
+  </span>
+  </div>
+</form>
+<p class="header-text">*We don't share your personal</p>
+<p class="header-text">info with anyone Check out our <a class="header-link" href="#">Policy </a>& for more information <a class="header-link" href="#">Contact Us</a>.</p>
+</div>
+</header>
+<main>
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+<div class="navbar-header">
+
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  </button>
+     
+   <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+</div>
+<div class="collapse navbar-collapse" id="navbar-main">
+	<ul class="nav navbar-nav">
+        <li><a class="nav-link" href="#">Services</a></li>
+        <li><a class="nav-link" href="#">About</a></li>
+        <li><a class="nav-link" href="#">Portfolio</a></li>
+        <li><a class="nav-link" href="#">Team</a></li>
+        <li><a class="nav-link" href="#">Pricing</a></li>
+        <li><a class="nav-link" href="#">Testimonial</a></li>
+    </ul>
+ <!-- Блок, расположенный справа -->
+    <ul class="nav navbar-nav navbar-right">
+        <!-- Ссылка -->        
+    <li><a href="#"><img src="img/fb.png"></a></li>
+    <li><a href="#"><img src="img/twitter.png"></a></li>
+          <!-- Выпадающий список -->
+    <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/Ellipse.png"></a>
+    <ul class="dropdown-menu">
+    <li><a href="#">...</a></li>
+    <li><a href="#">...</a></li>
+    </ul>
+    </li>
+    </ul>
+</div>
+</div>
+</nav>
+<div class="main container">
+<div class="row text-center">
+<img class="main-logo" src="img/smile.png">
+<h4 class="main-caption">Product features</h4>
+<h1>What we <span class="main-word">do</span></h1>
+</div>
+<div class="row text-center  main-task">
+<div class="col-md-4">
+	<img src="img/phone.png" alt="Телефон">
+	<h4 class="main-task_caption">Fully Responsive</h4>
+	<p class="main-task_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sapiente, reiciendis unde dolorem non illum nemo! Placeat porro voluptas neque!</p>
+</div>
+<div class="col-md-4">
+	<img class="main-img" src="img/desk.png" alt="доска">
+	<h4 class="main-task_caption">Easy to Customize</h4>
+	<p class="main-task_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt saepe quas atque ea incidunt magni voluptatibus fugit inventore non, provident.</p>
+</div>
+<div class="col-md-4">
+	<img src="img/lamp.png" alt="лампа">
+	<h4 class="main-task_caption">Direct Support</h4>
+	<p class="main-task_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid unde quae vel vitae iusto soluta minima ullam libero, vero ipsum.</p>
+</div>
+</div>
+</div>
+</main>
+
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	$( document ).ready(function() {
+
+    scaleVideoContainer();
+
+    initBannerVideoSize('.video-container .poster img');
+    initBannerVideoSize('.video-container .filter');
+    initBannerVideoSize('.video-container video');
+
+    $(window).on('resize', function() {
+        scaleVideoContainer();
+        scaleBannerVideoSize('.video-container .poster img');
+        scaleBannerVideoSize('.video-container .filter');
+        scaleBannerVideoSize('.video-container video');
+    });
+
+});
+
+function scaleVideoContainer() {
+
+    var height = $(window).height() + 5;
+    var unitHeight = parseInt(height) + 'px';
+    $('.homepage-hero-module').css('height',unitHeight);
+
+}
+
+function initBannerVideoSize(element){
+
+    $(element).each(function(){
+        $(this).data('height', $(this).height());
+        $(this).data('width', $(this).width());
+    });
+
+    scaleBannerVideoSize(element);
+
+}
+
+function scaleBannerVideoSize(element){
+
+    var windowWidth = $(window).width(),
+    windowHeight = $(window).height() + 5,
+    videoWidth,
+    videoHeight;
+
+    // console.log(windowHeight);
+
+    $(element).each(function(){
+        var videoAspectRatio = $(this).data('height')/$(this).data('width');
+
+        $(this).width(windowWidth);
+
+        if(windowWidth < 1000){
+            videoHeight = windowHeight;
+            videoWidth = videoHeight / videoAspectRatio;
+            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+
+            $(this).width(videoWidth).height(videoHeight);
+        }
+
+        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+    });
+}
+</script>
+</body>
+</html>
