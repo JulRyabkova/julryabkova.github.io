@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>lesson19</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<section class="cd-section">
+		<div class="cd-modal-action">
+			<a href="#0" class="modal-btn" data-type="modal-trigger">Модальное окно</a>
+			<span class="cd-modal-bg"></span>
+		</div> <!-- cd-modal-action -->
+
+		<div class="cd-modal">
+			<div class="cd-modal-content">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+				</p>
+			</div> <!-- cd-modal-content -->
+		</div> <!-- cd-modal -->
+
+		<a href="#0" class="cd-modal-close">Close</a>
+	</section> <!-- .cd-section -->
+
+
+
+
+
+<div class="col-md-12 text-center">
+<a href="#myModal" class="btn btn-primary btn-modal" data-toggle="modal">Авторизация</a>
+</div>
+<!-- HTML-код модального окна -->
+<div id="myModalBox" class="modal fade">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <!-- Заголовок модального окна -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Авторизируйтесь перед входом на сайт</h4>
+      </div>
+      <!-- Основное содержимое модального окна -->
+      <div class="modal-body">
+<form id="form">
+  <div class="form-group">
+    <label for="inputEmail">Введите Email или Логин</label>
+    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Введите email или Логин">
+  </div>
+  <div class="form-group">
+    <label for="inputPassword">Пароль:</label>
+    <input type="password" class="form-control" id="inputPassword" name="pass" placeholder="Введите пароль">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Запомнить
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default btn-form">Войти</button>
+</form>
+      </div>
+      <!-- Футер модального окна -->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function() {
+  	$(".btn").click(function(event) {
+  
+    $("#myModalBox").modal('show');
+    });
+    $("#form").validate({
+            rules:{
+              email: {
+                required: true,
+                minlength: 6,
+                email: true
+              },
+              pass: {
+                required: true,
+                minlength: 8
+              }
+            },
+            messages: {
+              email: {
+                required: 'Введите  email',
+                minlength: 'Не менее 6 символов',
+                email: 'Введите корректный email'
+              },
+              pass:{
+                required: 'Введите пароль',
+                minlength: 'Пароль не менее 8 символов'
+              }
+            }
+          });
+});
+</script>
+</body>
+</html>
