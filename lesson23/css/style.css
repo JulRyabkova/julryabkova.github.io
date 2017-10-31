@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+.form {
+  position: absolute;
+  bottom: 10%;
+  left: 60%;
+  background: #4d59a1;
+  width: 500px;
+  height: 500px;
+}
+.form-caption {
+  padding-top: 15px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+}
+.form-control {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 25px 10px;
+}
+.form-btn {
+  margin-top: 25px;
+  background: #c3f37f;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 50px;
+  padding: 20px 35px;
+}

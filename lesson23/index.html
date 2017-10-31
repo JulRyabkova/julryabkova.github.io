@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>lesson23</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+</head>
+<body>
+<div class="container-fluid">
+ <div class="row">
+ 	 <div id="map"></div>
+ </div>
+ <div class="col-md-6 text-center form">
+ 	<h1 class="form-caption">Contact</h1>
+	<form id="form">
+	  <div class="col-md-12">
+	  <input type="email" class="form-control" name="email" placeholder="Your Email">
+	  </div>
+	  <div class="col-md-6">
+	  <input type="text" class="form-control" name="company" placeholder="Company">
+	  </div>
+	  <div class="col-md-6">
+	  <input type="text" class="form-control" name="subject" placeholder="Subject">
+	  </div>
+	  <div class="col-md-12">
+	  <textarea name="message" cols="15" rows="4" class="form-control" placeholder="Your Messages"></textarea>
+	  </div>
+	  <br>
+	  <button class="btn form-btn" type="submit">Send Message</button>
+	</form>
+ </div>
+</div>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</script>
+        <script type="text/javascript">
+            var map;
+
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [59.916424, 30.475472],
+                    zoom: 16,
+                    scrollWheelZoom: false
+                });
+
+                DG.marker([59.916424, 30.475472]).addTo(map).bindPopup('Вы кликнули по мне!');
+            });
+        </script>
+</body>
+</html>
