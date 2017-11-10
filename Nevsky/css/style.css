@@ -1,0 +1,309 @@
+html {
+  font-size: 10px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: #4a7337;
+}
+header {
+  background-color: #fff;
+}
+.header {
+  background: url(../img/main-bg.jpg) no-repeat center 10rem;
+  background-size: cover;
+  height: 55rem;
+}
+.header-phone {
+  display: inline-block;
+  margin-top: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Russo One', sans-serif;
+  color: #582e22;
+  font-size: 2.5rem;
+}
+.header-phone:hover {
+  text-decoration: none;
+  color: #a2543e;
+}
+.header-box {
+  margin-top: 6rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50px;
+  width: 60rem;
+  height: 25rem;
+  background: rgba(255, 255, 255, 0.6);
+}
+.header-caption {
+  padding-top: 2rem;
+  font-family: 'Russo One', sans-serif;
+  letter-spacing: 0.5rem;
+  font-size: 8rem;
+  color: #582e22;
+  text-shadow: 2px 2px 10px black;
+}
+.header-logo {
+  max-width: 10rem;
+  margin-left: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5rem;
+  background: #4a7337;
+  border: none;
+  border-radius: 0px;
+  -webkit-box-shadow: 2px 2px 10px black;
+          box-shadow: 2px 2px 10px black;
+}
+.navbar .nav {
+  padding-left: 5rem;
+}
+.navbar .nav-link {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-transform: uppercase;
+  font-family: 'Cormorant Unicase', serif;
+}
+.navbar .nav-link:hover {
+  background: #609648;
+}
+.btn-primary {
+  background-color: #4a7337;
+  border-color: #4a7337;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+}
+.modal {
+  background: #1e2e16;
+}
+.modal-title {
+  color: #582e22;
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+}
+.modal-text {
+  font-family: 'Cormorant Unicase', serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.modal-content {
+  background: #e9e3b6;
+}
+.modal-documents {
+  font-family: 'Cormorant Unicase', serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #582e22;
+  text-decoration: none;
+}
+.modal-documents:hover {
+  text-decoration: none;
+}
+.btn-default {
+  font-family: 'Cormorant Unicase', serif;
+  font-weight: 600;
+}
+.main {
+  padding: 0;
+  background-color: #fff;
+}
+.sale {
+  max-width: 105rem;
+}
+.sale-carousel {
+  position: relative;
+}
+.sale-carousel_img {
+  margin: 2rem auto;
+  max-height: 20rem;
+}
+.about_us {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem;
+}
+.about_us-caption {
+  font-family: 'Russo One', sans-serif;
+  color: #582e22;
+}
+.about_us-text {
+  font-family: 'Cormorant Unicase', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: justify;
+}
+.about_us-phone {
+  font-family: 'Russo One', sans-serif;
+  color: #582e22;
+  font-size: 2rem;
+}
+.about_us-phone:hover {
+  text-decoration: none;
+  color: #a2543e;
+}
+.menu {
+  background: #e9e3b6;
+}
+.menu-tab_caption {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  font-size: 3rem;
+  font-family: 'Russo One', sans-serif;
+  color: #582e22;
+}
+.menu-nav {
+  padding-left: 20rem;
+  background: #4a7337;
+  border: none;
+  border-radius: 0px;
+  -webkit-box-shadow: 2px 2px 10px black;
+          box-shadow: 2px 2px 10px black;
+}
+.menu-nav_item {
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: 'Cormorant Unicase', serif;
+}
+.menu-nav_item:hover {
+  color: #582e22;
+  font-weight: 600;
+}
+li.menu-nav_lists {
+  margin-left: 1rem;
+}
+.cakes {
+  list-style: none;
+  margin: 0 -20px 0 0;
+  padding: 0;
+}
+.cakes-wrapper {
+  display: block;
+  float: left;
+  -webkit-transition: width .2s;
+  transition: width .2s;
+}
+.cakes-item {
+  display: block;
+  border: 1px solid #704012;
+  position: relative;
+  background: #fff;
+  margin: 0 20px 20px 0;
+  text-decoration: none;
+  color: #474747;
+  z-index: 0;
+  height: 35rem;
+}
+.cakes-item:hover {
+  color: #333333;
+  text-decoration: none;
+}
+.cakes-photo {
+  position: relative;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+.cakes-photo img {
+  position: absolute;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+}
+.cakes-description {
+  position: relative;
+  display: inline-block;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  max-height: 15rem;
+  overflow-y: auto;
+}
+.cakes-description_caption {
+  font-family: 'Russo One', sans-serif;
+  color: #582e22;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.cakes-description_text {
+  font-family: 'Cormorant Unicase', serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 0 0.25rem;
+  text-overflow: ellipsis;
+}
+.cakes-wrapper:hover .cakes-photo img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.alt_page_navigation {
+  padding-bottom: 2rem;
+}
+.alt_page_navigation a {
+  padding: 0.4rem 0.9rem;
+  margin: 0.2rem;
+  color: white;
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 1.5rem;
+  background-color: #cda989;
+  border-radius: 100%;
+  border: 1px solid #9d8b77;
+  -webkit-box-shadow: 0px 0px 15px rgba(157, 139, 119, 0.8);
+          box-shadow: 0px 0px 15px rgba(157, 139, 119, 0.8);
+}
+.active_page {
+  background-color: #fff !important;
+  color: black !important;
+}
+.contacts-caption {
+  margin-top: 3rem;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  color: #582e22;
+}
+.contacts-map {
+  width: 40rem;
+  height: 30rem;
+  margin: 3rem 2rem;
+}
+.contacts-box {
+  width: 40rem;
+  height: 30rem;
+  background: #4a7337;
+  position: absolute;
+  left: 12%;
+  margin-top: 5rem;
+}
+.contacts-text {
+  font-family: 'Cormorant Unicase', serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.contacts-phone {
+  color: #333333;
+}
+.contacts-phone:hover {
+  text-decoration: none;
+}
+.contacts-list {
+  margin-top: 4rem;
+}
