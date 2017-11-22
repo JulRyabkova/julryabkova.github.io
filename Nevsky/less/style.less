@@ -1,0 +1,647 @@
+@main-color: ;
+@bg-color: #4a7337;
+@text-color: #582e22; 
+
+html{
+	font-size: 10px;
+	overflow-x: hidden;
+}
+
+body{
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	background: @bg-color;
+}
+
+header{
+	background-color: #fff;
+}
+
+.header{
+	&-phone{
+		display: inline-block;
+		margin-top: 3rem;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Russo One', sans-serif;
+		color: @text-color;
+		font-size: 2.5rem;
+		&:hover{
+			text-decoration: none;
+			color: lighten(@text-color, 20%);
+		}
+	}
+	&-box{
+		margin-top: 6rem;
+		display: inline-block;
+		text-align: center;
+		border-radius: 50px;
+		width: 60rem;
+		height: 25rem;
+		background: rgba(255,255,255,0.6);
+	}
+	&-caption{
+		display: inline-block;
+		padding-top: 2rem;
+		font-family: 'Russo One', sans-serif;
+		letter-spacing: 0.5rem;
+		font-size: 8rem;
+		color: @text-color;
+		text-shadow: 2px 2px 10px black;
+	}
+	&-logo{
+		max-width: 10rem;
+		margin-left: 5rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		display: inline-block;
+	}
+}
+
+.splash{
+	padding-top: 5rem;
+	width: 100vw;
+	background: url(../img/main-bg.jpg) no-repeat center center;
+	background-size: cover;
+	height: 65rem;
+	background-attachment:fixed;
+}
+
+.navbar-toggle{
+	background-color: lighten(@bg-color, 10%) !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #fff;
+}
+
+.navbar{
+	margin-bottom: 0rem;
+	background: @bg-color;
+	border: none;
+	border-radius: 0px;
+	box-shadow: 2px 2px 10px black;
+	.nav{
+		padding-left: 5rem;
+		&-link{
+			padding-left: 0.5rem;
+			padding-right: 0.5rem;
+			text-transform: uppercase;
+			font-family: 'Cormorant Unicase', serif;
+			&:hover{
+				background: lighten(@bg-color, 10%);
+			}
+		}
+	}
+}
+
+.btn-primary{
+	background-color: @bg-color;
+	border-color: @bg-color;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  &:hover{
+  	color: #fff;
+  }
+}
+
+.modal{
+	background: darken(@bg-color,20%);
+	&-title{
+		color: @text-color;
+		font-family: 'Russo One', sans-serif;
+		text-align: center;
+	}
+	&-text{
+		font-family: 'Cormorant Unicase', serif;
+		font-weight: 600;
+		font-size: 1.7rem;
+	}
+	&-content{
+		background: lighten(#ddd48f,10%);
+	}
+	&-documents{
+		font-family: 'Cormorant Unicase', serif;
+		font-weight: 600;
+		font-size: 1.5rem;
+		color: @text-color;
+		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	&-header{
+		border: none;
+	}
+	&-footer{
+		border-top: 1px solid @text-color;
+	}
+}
+
+.btn-default{
+	font-family: 'Cormorant Unicase', serif;
+	font-weight: 600;
+}
+
+.main{
+	padding: 0; 
+	background-color: #fff;
+}
+
+.sale{
+	&-carousel{
+		max-width: 115rem;
+		position: relative;
+	  &_img{
+	  	margin: 2rem auto;
+	  	max-height: 20rem;
+	  }
+
+	}
+}
+
+.about_us{
+	box-sizing: border-box;
+	padding: 1rem;
+	&-caption{
+		font-family: 'Russo One', sans-serif;
+		color: @text-color;
+	}
+	&-text{
+		font-family: 'Cormorant Unicase', serif;
+		font-size: 1.6rem;
+		font-weight: 600;
+		text-align: justify;
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	&-phone{
+		font-family: 'Russo One', sans-serif;
+		color: @text-color;
+		font-size: 2rem;
+		&:hover{
+			text-decoration: none;
+			color: lighten(@text-color, 20%);
+		}
+	}
+	&-img{
+		width: 75%;
+		display: inline-block;
+		text-align: center;
+		padding-bottom: 1.5rem;
+		padding-left: 1rem;
+		padding-top: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+.img-3{
+	width: 60%;
+	margin-bottom: 1rem;
+}
+
+.menu{
+	background: lighten(#ddd48f,10%);;
+	&-tab{
+		&_caption{
+			text-align: center;
+			padding-bottom: 1.5rem;
+			font-size: 3rem;
+			font-family: 'Russo One', sans-serif;
+		    color: @text-color;
+		}
+		&_text{
+			margin-left: 10%;
+			font-size: 1.8rem;
+			text-transform: uppercase;
+			font-family: 'Cormorant Unicase', serif;
+			font-weight: bold;
+			margin-bottom: 1.5rem;
+		}
+		&_list{
+			font-size: 1.5rem;
+			font-family: 'Cormorant Unicase', serif;
+			font-weight: bold;
+			text-align: justify;
+			
+		}
+		&_features{
+			padding-left: 11%;
+		}
+	}
+	&-nav{
+		padding-left: 20rem;
+		background: @bg-color;
+		border: none;
+		border-radius: 0px;
+		box-shadow: 2px 2px 10px black;
+		&_item{
+			color: #fff;
+			font-size: 1.8rem;
+			text-transform: uppercase;
+			font-family: 'Cormorant Unicase', serif;
+			&:hover{
+				color: @text-color;
+				font-weight: 600;
+			}
+			
+		}
+	}
+}
+
+li.menu-nav_lists{
+	margin-left: 1rem;
+}
+
+.cakes{
+ 	list-style: none;
+	margin: 0 -20px 0 0;
+	padding: 0;
+ 	&-wrapper {
+		display: block;
+		float: left;
+		transition: width .2s;
+	}
+	&-item{
+		display: block;
+		float: left;
+		border: 1px solid #704012;
+		position: relative;
+		background: #fff;
+		margin: 0 20px 20px 0;
+		text-decoration: none;
+		color: #474747;
+		z-index: 0;
+		height: 35rem;
+		&:hover{
+		  	color: #333333;
+		  	text-decoration: none;
+		  }
+	}
+	&-photo{
+		position: relative;
+		padding-bottom: 100%;
+		overflow: hidden;
+	}
+	&-photo img{
+		position: absolute;
+		right: 0;
+		left: 0;
+		max-width: 100%;
+		max-height: 100%;
+		margin: auto;
+		transition: transform .4s ease-out;
+	}
+	&-description{
+		position: relative;
+		display: inline-block;
+		text-overflow: ellipsis;
+		max-width: 100%;
+		max-height: 100%;
+		text-align: center;
+		max-height: 15rem;
+		overflow-y: auto;
+		&_caption{
+		  font-family: 'Russo One', sans-serif;
+		  color: @text-color;
+		  text-align: center;
+		  font-size: 1.4rem;
+		}
+		&_text{
+		  font-family: 'Cormorant Unicase', serif;
+		  font-weight: bold;
+		  font-size: 1.3rem;
+		  padding: 0 0.25rem;
+		  text-overflow: ellipsis;
+		}
+	} 
+}
+
+.cakes-wrapper:hover .cakes-photo img {
+	transform: scale(1.05);
+}
+
+.alt_page_navigation{
+	padding-bottom:2rem;
+	a{
+	padding: 0.4rem 0.9rem;
+	margin: 0.2rem;
+	color:white;
+	text-decoration:none;
+	font-family: Tahoma;
+	font-size: 1.5rem;
+	background-color:#cda989;
+	border-radius: 100%;
+	border: 1px solid #9d8b77;
+	box-shadow: 0px 0px 15px rgba(157,139,119,0.8);
+	}
+}
+
+.active_page{
+	background-color:#fff !important;
+	color:black !important;
+}
+
+ .contacts{
+ 	&-caption{
+ 		margin-top: 3rem;
+ 		text-align: center;
+ 		font-family: 'Russo One', sans-serif;
+		color: @text-color;
+
+ 	}
+ 	&-map{
+ 		width: 40rem;
+ 		height: 30rem;
+ 		margin: 3rem 2rem;
+ 	}
+ 	&-box{
+ 		width: 40rem;
+ 		height: 30rem;
+ 		background: @bg-color;
+ 		position: absolute;
+ 		left: 12%;
+ 		margin-top: 5rem;
+ 	}
+ 	&-text{
+ 	    font-family: 'Cormorant Unicase', serif;
+ 	    font-size: 2rem;
+ 	    font-weight: bold;	
+ 	}
+ 	&-phone{
+ 		color: #333333;
+ 		&:hover{
+ 		text-decoration: none;
+ 	    }
+ 	}
+ 	&-list{
+ 		margin-top: 4rem;
+ 	}
+ }
+
+ #toTop {
+ position:fixed;
+ z-index:9999;
+ bottom:10px;
+ right:10px;
+ background: #fff;
+ border: 1px solid  #aeaeae;
+ border-radius: 50px;
+ padding: 5px;
+ cursor: pointer;
+ color: #353430;
+ text-decoration: none;
+ width:75px;
+ font-family: 'Cormorant Unicase', serif;
+ font-size: 1.5rem;
+ text-transform: uppercase;
+ font-weight: bold;
+ opacity: 0.6;
+ &:hover{
+ 	opacity: 1;
+ 	border: 1px solid #353430;
+ }	
+}
+
+
+
+@media (max-width: 768px){
+	html{
+		font-size: 5px;
+	}
+	.sale{
+	&-carousel{
+		max-width: 98vw;
+		}
+	}
+	
+	.container{
+		margin: 0;
+		width: 100vw;
+	}
+	.header-caption{
+		padding-top: 0.5rem;
+	}
+	li.menu-nav_lists{
+	    margin-left: 1rem;
+	    
+	
+	}
+	.menu-nav{
+		padding-left: 4rem;
+		&_item{
+			font-size: 1.8rem;
+		}
+	}
+	.nav>li>a{
+		padding: 1rem 1rem;
+	}
+	.cakes{
+	&-item{
+		width: 35vw;
+		height: 70%;
+		margin-left: -2rem;
+	}
+	
+	&-description{
+		display: inline-block;
+		max-width: 100%;
+		max-height: 20rem;
+		overflow-x: hidden;
+		&_text{
+		  font-size: 1.4rem;
+		  padding: 0.25 0.25rem;
+		  overflow-y: hidden;
+		  overflow-x: hidden;
+		  text-overflow: ellipsis;
+		}
+	} 
+}
+	.contacts{
+		&-box{
+ 		position: absolute;
+ 		left: 5%;
+ 		margin-top: 5rem;
+ 	}
+	}
+
+}
+
+@media (min-width: 565px) and (max-width: 768px){
+	.menu-nav{
+		padding-left: 23%;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 992px){
+	html{
+		font-size: 7px;
+	}
+	.sale{
+	&-carousel{
+		max-width: 98vw;
+		}
+	}
+	.container{
+		margin: 0;
+		width: 100vw;
+	}
+	.navbar-collapse{
+		padding-left: 0rem;
+	}
+	.navbar .nav{
+		padding-top: 0rem;
+		padding-left: 0rem;
+	}
+	.navbar .nav-link{
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.navbar-default .navbar-nav > li > a{
+		font-size: 1.6rem;
+	}
+	li.menu-nav_lists{
+	    margin-left: 5rem;
+	    
+	}
+	.menu-nav{
+		padding-left: 4rem;
+		&_item{
+			font-size: 2rem;
+		}
+	}
+	.nav>li>a{
+		padding: 1rem 1rem;
+	}
+	.cakes{
+	&-item{
+		width: 20vw;
+		display: block;
+		height: 40rem;
+		margin-left: -2rem;
+	}
+	
+	&-description{
+		display: inline-block;
+		text-overflow: ellipsis;
+		max-width: 100%;
+		max-height: 35%;
+		overflow-x: hidden;
+		&_text{
+		  padding: 0.5 0.25rem;
+		  overflow-y: auto;
+		  text-overflow: ellipsis;
+		}
+	} 
+	}
+	.contacts{
+		&-box{
+ 		position: absolute;
+ 		left: 6%;
+ 		margin-top: 5rem;
+ 	}
+	}
+}
+
+@media (min-width: 860px) and (max-width: 992px){
+	.navbar .nav{
+		margin-left: 12%;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	html{
+		font-size: 9px;
+	}
+	.navbar-collapse{
+		padding-left: 0rem;
+		padding-right: 0rem;
+	}
+	.navbar .nav{
+		margin-left: 1rem;
+		padding-left: 0rem;
+	}
+	.navbar-default .navbar-nav > li > a{
+		font-size: 1.5rem;
+	}
+	.navbar .nav-link{
+		padding: 0;
+	}
+	.menu-nav{
+		padding-left: 10rem;
+	}
+	.nav>li>a{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	.cakes{
+	&-description{
+		max-height: 17rem;
+		overflow-x: hidden;
+		&_text{
+		  padding: 0.5 0.25rem;
+		  overflow-y: auto;
+		  text-overflow: ellipsis;
+		}
+	} 
+}
+	.contacts{
+		&-box{
+ 		position: absolute;
+ 		left: 8%;
+ 		margin-top: 5rem;
+ 	}
+	}
+}
+
+@media (min-width: 1200px) {
+	.contacts{
+		&-box{
+ 		position: absolute;
+ 		left: 11%;
+ 		margin-top: 5rem;
+ 	}
+	}
+	.navbar-default .navbar-nav > li > a{
+		font-size: 1.5rem;
+	}
+	.navbar .nav{
+		margin-left: 7%;
+		padding-left: 0rem;
+	}
+	
+}
+
+@media (min-width: 2000px){
+	.contacts{
+		&-box{
+ 		position: absolute;
+ 		left: 30%;
+ 		margin-top: 5rem;
+ 	}
+	}
+	.navbar-collapse{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.navbar .nav{
+		margin-left: 25%;
+		padding-left: 0rem;
+	}
+	.navbar-default .navbar-nav > li > a{
+		font-size: 2rem;
+	}
+	.navbar .nav-link{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
