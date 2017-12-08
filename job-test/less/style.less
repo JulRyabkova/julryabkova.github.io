@@ -1,0 +1,536 @@
+@top-menu: #000000;
+@menu-color: #3a3a43;
+@active_link-color: #ecc50d;
+@sidebar-color: #b9b9c3;
+@date-color: #ff5f47;
+@btn-color: #62c741;
+@text_link-color: #ffffff;
+@icon-color: #5ebcfb;
+
+html{
+	font-size: 10px;
+}
+
+.top-menu{
+	&__list{
+		background-color: @top-menu;
+		list-style: none;
+		width: 100%;
+		height: 30px;
+		margin: 0 auto;
+	}
+	&__item{
+		display: inline-block;
+		margin-top: 0.5rem;
+		margin-left: 2rem;
+	}
+	&__link{
+		color: @sidebar-color;
+		&:hover{
+			text-decoration: none;
+			color: @text_link-color;
+		}
+		&.active{
+			text-decoration: none;
+			color: @text_link-color;
+			font-weight: bold; 
+		}
+	}
+	&__icon_1,
+	&__icon_2,
+	&__icon_3{
+		display: inline-block;
+    	width: 1.6rem;
+    	height: 1.6rem;
+    	margin: 0 5px;
+    	vertical-align: bottom;
+    	background: url("https://www.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") no-repeat;
+	}
+	&__icon_1{
+		background-position: -5rem 0rem;
+	}
+	&__icon_2{
+		background-position: 0rem -6.8rem;
+	}
+	&__icon_3{
+		background-position: 0rem -5rem;
+	}
+}
+
+.menu__icon_svg-2:hover{
+	.cls-1{
+	fill: @icon-color;
+	}
+}
+
+
+.menu{
+	width: 100%;
+	height: 6rem;
+	background-color: @menu-color;
+	top: 30px;
+   	position: fixed;
+   	z-index: 1000;
+	&__img-1 {
+		width: 20rem;
+		margin: 0 auto;
+		display: inline-block;
+	}
+	&__list{
+		list-style: none;
+		height: 5rem;
+		display: inline-block;
+	}
+	&__item{
+		padding-top: 1rem; 
+		display: inline-block;
+	}
+	&__link{
+		color: @text_link-color;
+		font-weight: bold;
+		margin-left: 2rem;
+		&:hover{
+			text-decoration: none;
+			color: @active_link-color;
+		}
+		&.active{
+			color: @active_link-color;
+			padding-bottom: 1.4rem;
+			border-bottom: 3px solid @active_link-color; 
+		}
+		}
+	&__icon{
+		display: inline-block;
+    	width: 2.1rem;
+    	height: 2.4rem;
+    	margin: 0 5px;
+    	vertical-align: bottom;
+    	background: url("https://www.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") no-repeat;
+    	background-position: 0 -11rem;
+	}
+	&__click_img{
+		display: none;
+	}
+}
+
+.sidebar{
+	margin-top: 3%;
+	background-color: lighten(@sidebar-color, 15%);
+	width: 25rem;
+	float: right;
+	display: block;
+	&__wrapper{
+		border: 2px solid @sidebar-color;
+		border-bottom: 0.1px solid @sidebar-color;
+		&:last-child{
+			border-bottom: 2px solid @sidebar-color;
+		}
+	}
+	&__img{
+		width: 90%;
+		margin: 10% 5% 3% 5%;
+		border: 2px solid @sidebar-color;
+
+	}
+	&__caption{
+		color: @top-menu;
+		font-size: 1.6rem;
+		font-weight: bold;
+		padding-left: 3%;
+	}
+	&_text{
+		font-size: 1.2rem;
+		padding-left: 3%;
+		font-weight: bold;
+		color: darken(@sidebar-color, 30%);
+	}
+	&__link{
+		&:hover{
+			text-decoration: none;
+			color: @top-menu;
+		}
+	}
+}
+
+.main{
+	margin-top: 5%;
+	margin-right: 260px;
+	margin-left: 3%;
+	max-width: 976px;
+	min-width: 740px;
+	position: relative;
+
+}
+
+.border{
+	border: 2px solid lighten(@sidebar-color, 15%);
+}
+
+.line{
+	background-color: lighten(@sidebar-color, 15%);
+	width: 95%;
+	height: 2px;
+	margin: 0 auto;
+}
+
+.sale{
+	padding-left: 2%;
+	padding-right: 2%;
+	&__pgn{
+		padding-top: 2%;
+		display: inline-block;
+		font-weight: bold;
+		font-size: 1.1rem;
+	}
+	&__time{
+		text-align: center;
+		float: right;
+		position: relative;
+		bottom: 8rem;
+		margin-right: 8%;
+		&_caption{
+			font-weight: bold;
+			color: @menu-color;
+			font-size: 1.8rem;
+		}
+		&_box{
+			background-color: @menu-color;
+			border-radius: 3px;
+		}
+		&_numb{
+			color: @active_link-color;
+			font-size: 2rem;
+			letter-spacing: 0.5rem;
+			padding: 3% 4% 3% 7%;
+		}
+	}
+	&__img{
+		width: 35%;
+		float: left;
+		margin-right: 2%;
+	}
+	&__link{
+		color: @top-menu;
+		&:hover{
+			text-decoration: none;
+			color: @top-menu;
+		}
+	}
+	&__caption_main{
+		text-align: left;
+		font-size: 2.5rem;
+		padding-top: 2%;
+	}
+	&__date{
+		background-color: @date-color;
+		width: 10rem;
+		border-radius: 5px;
+		margin-bottom: 3%;
+		&_text{
+			color: @text_link-color;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 1.1rem;
+			padding: 3% 0 2% 8%;
+		}
+	}
+	&__text{
+		font-weight: bold;
+		&_btn{
+			font-weight: bold;
+			display: inline-block;
+			margin-right: 3%;
+		}
+	}
+	&__btn{
+		background-color: @btn-color;
+		border: none;
+		border-radius: 5px;
+		margin-bottom: 8%;
+		display: inline-block;
+		padding: 1% 2%;
+		display: inline-block;
+	}
+	&__phone{
+		color: @text_link-color;
+		font-weight: bold;
+		font-size: 1.8rem;
+		&:hover{
+			text-decoration: none;
+			color: @text_link-color;
+		}
+	}
+}
+
+.sale-list{
+	padding-left: 2%;
+	padding-right: 2%;
+	&__item{
+		height: 20rem;
+	}
+	&__img{
+		width: 30%;
+		float: left;
+		margin-right: 2%;
+		
+	}
+	&__list{
+		list-style: none;
+		padding: 0;
+	}
+	&__date{
+		position: relative;
+		background-color: @date-color;
+		width: 10rem;
+		left: 18%;
+		top: 4rem;
+		border-radius: 5px;
+		&_text{
+			color: @text_link-color;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 1.1rem;
+			padding: 4% 0 2% 8%;
+		}
+		
+	}
+	&__link{
+		color: @top-menu;
+		&:hover{
+			text-decoration: none;
+			color: @top-menu;
+		}
+	}
+	&__caption{
+		font-weight: bold;
+
+	}
+	&__text{
+		display: inline-block;
+		width: 50%;
+		color: darken(@sidebar-color, 30%);
+	}
+	&__time{
+		float: right;
+		&_caption{
+			text-align: left;
+			font-weight: bold;
+			margin: 1%;
+		}
+		&_box{
+			background-color: @menu-color;
+			display: inline-block;
+			width: 2.5rem;
+			border-radius: 2px;
+		}
+		&_numb{
+			color: @text_link-color;
+			font-size: 2.5rem;
+			padding-left: 0.6rem;
+			margin: 0 auto;
+		}
+		&_text{
+			display: inline-block;
+			font-weight: bold;
+		}
+	}
+	
+}
+
+.sale-box{
+	&__wrapper{
+		width: 30%;
+		height: 36rem;
+		border: 1px solid @sidebar-color;
+		display: block;
+		float: left;
+		margin-right: 1.5%;
+		margin-bottom: 3%;
+		cursor: pointer;
+		&:hover{
+			box-shadow: 5px 5px 15px rgba(10,10,10,0.3);
+		}
+	}
+	&__link{
+		display: block;
+		position: relative;
+		padding-bottom: 60%;
+		overflow: hidden;
+		&_caption{
+			color: darken(@sidebar-color, 50%);
+			&:hover{
+				text-decoration: none;
+				color: @top-menu;
+			}
+		}
+	}
+	&__text{
+		font-weight: bold;
+		padding-left: 2.5%;
+		padding-right: 2%;
+		padding-top: 3%;
+		font-size: 1.7rem;
+	}
+	
+	&__img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		transition: transform .4s ease-out;
+	}
+	&__date{
+		background-color: @date-color;
+		width: 10rem;
+		border-radius: 5px;
+		margin-left: 3%;
+		&_text{
+			color: @text_link-color;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 1.1rem;
+			padding: 4% 0% 3% 8%;
+		}
+		
+	}
+}
+
+
+ @media (max-width: 990px){
+    .top-menu{
+    	display:none;
+    }
+    .menu{
+    	&__click_img{
+    		width: 15rem;
+    		padding-top: 2%;
+    		margin-left: 5%;
+    		display: block;
+    	}
+    	&__list{
+    		padding: 0;
+    		display: none;
+    		
+
+    	}
+    	&__link{
+    		font-size: 1.4rem;
+    	}
+    	&__item{
+    		width: 100%;
+    		background-color: @menu-color;
+    		padding-bottom: 3%;
+    	}
+    	&__img-1{
+    		opacity: 0;
+    	}
+    }
+    .sidebar{
+    	display: none;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1100px) {
+	.sale{
+		&__caption_main{
+			font-size: 2rem;
+		}
+	}
+	.sale-list{
+		&__date{
+			width: 8rem;
+			&_text{
+				font-size: 0.9rem;
+				
+			}
+		}
+	}
+	.top-menu{
+		&__link{
+			font-size: 1.2rem;
+		}
+		&__list{
+			padding-left: 0;
+		}
+		&__item{
+			margin-left: 1%;
+		}
+	}
+	.menu{
+		height: 5rem;
+		&__img-1{
+			width: 10rem;
+		}
+	}
+}
+
+@media (min-width: 1100px) and (max-width: 1190px){
+	.sale-list{
+		&__img{
+			width: 35%;
+		}
+		&__date{
+			left: 22%;
+		}
+	}
+	.top-menu{
+		&__link{
+			font-size: 1.2rem;
+		}
+		&__list{
+			padding-left: 1%;
+		}
+		&__item{
+			margin-left: 1.5%;
+		}
+	}
+	.sale-box{
+		&__wrapper{
+			margin-right: 2%;
+		}
+	}
+}
+
+@media (min-width: 1190px) and (max-width: 1290px){
+	.top-menu{
+		&__link{
+			font-size: 1.3rem;
+		}
+	}
+}
+
+
+@media (min-width: 1290px) and (max-width: 1380px){
+	.clearfix{
+		width: 4%;
+	}
+}
+
+
+ @media (min-width: 1380px) and (max-width: 1500px){
+ 	.top-menu{
+ 		text-align: center;
+ 	}
+ 	.menu{
+ 		text-align: center;
+ 	}
+ 	.main{
+ 		margin: 0 auto;
+ 		margin-right: 260px;
+ 	}
+ 	.clearfix{
+		width: 9%;
+	}
+ }
+
+ @media (min-width: 1500px){
+ 	.main{
+ 		margin: 0 auto;
+ 	}
+ 	.top-menu, .menu{
+ 		text-align:center;
+ 	}
+ }
